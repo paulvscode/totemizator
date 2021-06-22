@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <title>Totemizator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <i class="fa fa-angellist" aria-hidden="true"></i> Totemizator
+        <i class="fa fa-angellist" aria-hidden="true"></i>
+      </div>
+
+      <div class="container-questions">
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Est-ce que tu skates ?</p>
+          <select id="question-one" onchange="storeAnswer(id)">
+            <option value="1">Oui</option>
+            <option value="2">Non</option>
+            <option value="0">
+              Je ne souhaite pas me positionner
+            </option>
+          </select>
+        </div>
+        <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Quel est ton âge ?</p>
+          <select id="question-two" onchange="storeAnswer(id)">
+            <option value="1">5 - 10 ans</option>
+            <option value="1">10 - 15 ans</option>
+            <option value="2">15 - 20 ans</option>
+            <option value="3">20 - 30 ans</option>
+            <option value="3">30 - 50 ans</option>
+            <option value="4">50 - 150 ans</option>
+            <option value="0">
+              Je ne souhaite pas dévoiler cette information intime
+            </option>
+          </select>
+        </div>
+        <!-- fin de question -->
+      </div>
+      <h4 class="results-div"><button class="results">Voir mes résultats</button></h4>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
