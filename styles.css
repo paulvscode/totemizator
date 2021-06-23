@@ -52,3 +52,7 @@ body {
 .results-div {
     font-size: 3rem;
 }
+
+.question-localized {
+  margin-left: auto;
+}

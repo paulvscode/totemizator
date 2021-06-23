@@ -22,19 +22,25 @@
         <!-- question -->
         <div class="question">
           <p class="question-text">Est-ce que tu skates ?</p>
-          <select id="question-one" onchange="storeAnswer(id)">
+          <select
+            id="question-one"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
             <option value="1">Oui</option>
             <option value="2">Non</option>
-            <option value="0">
-              Je ne souhaite pas me positionner
-            </option>
+            <option value="0">Je ne souhaite pas me positionner</option>
           </select>
         </div>
         <!-- fin de question -->
         <!-- question -->
         <div class="question">
           <p class="question-text">Quel est ton âge ?</p>
-          <select id="question-two" onchange="storeAnswer(id)">
+          <select
+            id="question-two"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
             <option value="1">5 - 10 ans</option>
             <option value="1">10 - 15 ans</option>
             <option value="2">15 - 20 ans</option>
@@ -47,8 +53,88 @@
           </select>
         </div>
         <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">
+            Quel est le meilleur kebab de Rouen rive droite ?
+          </p>
+          <select
+            id="question-three"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option value="1">Royal Kebab de Rouen</option>
+            <option value="1">Le Cass'Dal</option>
+            <option value="2">El Jasmin</option>
+            <option value="3">Kebab De La Fac</option>
+            <option value="3">Kebab La Fontaine</option>
+            <option value="4">Topkapi Kebab</option>
+            <option value="0">Je mange des pizzas</option>
+          </select>
+        </div>
+        <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Quelle taille de planche ?</p>
+          <select
+            id="question-four"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option value="1">7</option>
+            <option value="1">7.5</option>
+            <option value="2">8</option>
+            <option value="3">8.5</option>
+            <option value="3">9</option>
+            <option value="4">10 + (ça existe ?)</option>
+            <option value="0">J'y comprends rien à ces chiffres</option>
+          </select>
+        </div>
+        <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Signe astrologique ?</p>
+          <select
+            id="question-five"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option value="1">Bélier</option>
+            <option value="1">Taureau</option>
+            <option value="2">Gémeaux</option>
+            <option value="3">Cancer</option>
+            <option value="3">Lion</option>
+            <option value="4">Vierge</option>
+            <option value="4">Balance</option>
+            <option value="4">Scorpion</option>
+            <option value="4">Sagittaire</option>
+            <option value="4">Capricorne</option>
+            <option value="4">Verseau</option>
+            <option value="4">Poissons</option>
+            <option value="0">Goéland y'a pas ?</option>
+          </select>
+        </div>
+        <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Parlons peu, parlons politique</p>
+          <select
+            id="question-six"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option value="0">Édouard Philippe</option>
+            <option value="0">Jean-Paul Lecoq</option>
+            <option value="0">Alexis Deck</option>
+            <option value="0">Frédéric Groussard</option>
+            <option value="5">Non</option>
+          </select>
+        </div>
+        <!-- fin de question -->
       </div>
-      <h4 class="results-div"><button class="results">Voir mes résultats</button></h4>
+      <h4 class="results-div">
+        <button class="results">Voir mes résultats</button>
+      </h4>
     </div>
     <script src="./script.js"></script>
   </body>

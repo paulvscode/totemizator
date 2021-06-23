@@ -4,8 +4,8 @@ const resultsBtn = document.querySelector('.results');
 const resultsDiv = document.querySelector('.results-div');
 
 const storeAnswer = (id) => {
-  questionOne = document.getElementById(id).value;
-  answers.push(questionOne);
+  questionAnswered = document.getElementById(id).value;
+  answers.push(questionAnswered);
   document.getElementById(id).disabled = true;
   console.log(answers);
   return answers;
