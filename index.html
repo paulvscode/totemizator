@@ -27,6 +27,7 @@
             class="question-localized"
             onchange="storeAnswer(id)"
           >
+            <option>Je choisis ma réponse</option>
             <option value="1">Oui</option>
             <option value="2">Non</option>
             <option value="0">Je ne souhaite pas me positionner</option>
@@ -41,6 +42,7 @@
             class="question-localized"
             onchange="storeAnswer(id)"
           >
+            <option>Je choisis ma réponse</option>
             <option value="1">5 - 10 ans</option>
             <option value="1">10 - 15 ans</option>
             <option value="2">15 - 20 ans</option>
@@ -55,14 +57,13 @@
         <!-- fin de question -->
         <!-- question -->
         <div class="question">
-          <p class="question-text">
-            Quel est le meilleur kebab de Rouen rive droite ?
-          </p>
+          <p class="question-text">Quel est le meilleur kebab de Rouen rive droite ?</p>
           <select
             id="question-three"
             class="question-localized"
             onchange="storeAnswer(id)"
           >
+            <option>Je choisis ma réponse</option>
             <option value="1">Royal Kebab de Rouen</option>
             <option value="1">Le Cass'Dal</option>
             <option value="2">El Jasmin</option>
@@ -81,6 +82,7 @@
             class="question-localized"
             onchange="storeAnswer(id)"
           >
+            <option>Je choisis ma réponse</option>
             <option value="1">7</option>
             <option value="1">7.5</option>
             <option value="2">8</option>
@@ -99,6 +101,7 @@
             class="question-localized"
             onchange="storeAnswer(id)"
           >
+            <option>Je choisis ma réponse</option>
             <option value="1">Bélier</option>
             <option value="1">Taureau</option>
             <option value="2">Gémeaux</option>
@@ -117,12 +120,13 @@
         <!-- fin de question -->
         <!-- question -->
         <div class="question">
-          <p class="question-text">Parlons peu, parlons politique</p>
+          <p class="question-text">Personnalité locale préférée ?</p>
           <select
             id="question-six"
             class="question-localized"
             onchange="storeAnswer(id)"
           >
+            <option>Je choisis ma réponse</option>
             <option value="0">Édouard Philippe</option>
             <option value="0">Jean-Paul Lecoq</option>
             <option value="0">Alexis Deck</option>
@@ -131,9 +135,66 @@
           </select>
         </div>
         <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Un tatouage d'ange dans le dos ?</p>
+          <select
+            id="question-seven"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option>Je choisis ma réponse</option>
+            <option value="0">Je dis oui</option>
+            <option value="0">Je dis non</option>
+            <option value="0">J'en ai un sur chaque omoplate</option>
+            <option value="5">Je préfère les dauphins</option>
+          </select>
+        </div>
+        <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Quel est le trait de personnalité qui vous représente le mieux ?</p>
+          <select
+            id="question-eight"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option>Je choisis ma réponse</option>
+            <option value="0">La colère</option>
+            <option value="0">Le déni</option>
+            <option value="0">Le manque de confiance</option>
+            <option value="0">L'agressivité</option>
+            <option value="0">L'incertitude</option>
+            <option value="5">La bonté</option>
+          </select>
+        </div>
+        <!-- fin de question -->
+        <!-- question -->
+        <div class="question">
+          <p class="question-text">Le vaccin Covid-19</p>
+          <select
+            id="question-nine"
+            class="question-localized"
+            onchange="storeAnswer(id)"
+          >
+            <option>Je choisis ma réponse</option>
+            <option value="0">Edge</option>
+            <option value="0">3G</option>
+            <option value="0">4G</option>
+            <option value="0">5G</option>
+            <option value="0">6G</option>
+            <option value="5">Gégé</option>
+          </select>
+        </div>
+        <!-- fin de question -->
       </div>
       <h4 class="results-div">
-        <button class="results">Voir mes résultats</button>
+        <button class="results" type="button">Voir mes résultats</button>
+      </h4>
+      <h4>
+        <button class="print-option" type="button" onclick="toPrint()">
+          Version imprimable
+        </button>
       </h4>
     </div>
     <script src="./script.js"></script>

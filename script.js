@@ -36,4 +36,17 @@ const gimmeMyResults = (results) => {
   }
 };
 
+const toPrint = () => {
+  const questionText = questions.forEach(function (question) {
+    const returnedQuestion = question.querySelector('.question-text');
+    const returnedOptions = question.querySelector('.question-localized');
+    const returnedOptionsArray = Array.from(returnedOptions)
+   
+    returnedOptionsArray.map((item) => {
+      console.log(item.text)
+    })
+  
+  });
+};
+
 resultsBtn.addEventListener('click', castScore);
