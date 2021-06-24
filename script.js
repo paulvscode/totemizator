@@ -45,7 +45,6 @@ const toPrint = () => {
     returnedOptionsArray.map((item) => {
       console.log(item.text)
     })
-  
   });
 };
 
